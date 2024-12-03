@@ -11,7 +11,7 @@
   "dependencies": [],
   "event_sources": [
     {
-      "resource_type":"sqs_trigger",
+      "resource_type":"sqs_queue",
       "target_queue": "async_queue",
       "batch_size": 100
     }
