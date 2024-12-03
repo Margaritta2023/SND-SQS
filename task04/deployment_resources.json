@@ -27,7 +27,6 @@
   },
   "async-queue": {
     "resource_type": "sqs_queue",
-    "trigers": "sqs_handler",
     "fifo_queue": false,
     "region": "eu-central-1",
     "visibility_timeout": 30,
@@ -40,10 +39,11 @@
     "content_based_deduplication": false,
     "tags": {}
   },
-  "lambda_topic": {
+  "lambda-topic": {
     "resource_type": "sns_topic",
     "region": "eu-central-1",
     "event_sources": [],
     "tags": {}
   }
+
 }
