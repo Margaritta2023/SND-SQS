@@ -9,10 +9,16 @@
   "timeout": 100,
   "lambda_path": "lambdas\\sns_handler",
   "dependencies": [],
-  "event_sources": [],
+  "event_sources": [
+    {
+      "resource_type":"sns_topic_trigger",
+      "target_topic": "lambda_topic",
+      "region": "eu-central-1"
+    }
+  ],
   "env_variables": {},
   "publish_version": true,
-  "alias": "${lambdas_alias_name}",
+  "alias": "learn",
   "url_config": {},
   "ephemeral_storage": 512,
   "tags": {}

@@ -9,10 +9,16 @@
   "timeout": 100,
   "lambda_path": "lambdas\\sqs_handler",
   "dependencies": [],
-  "event_sources": [],
+  "event_sources": [
+    {
+      "resource_type":"sqs_trigger",
+      "target_queue": "async_queue",
+      "batch_size": 100
+    }
+  ],
   "env_variables": {},
   "publish_version": true,
-  "alias": "${lambdas_alias_name}",
+  "alias": "learn",
   "url_config": {},
   "ephemeral_storage": 512,
   "tags": {}
